@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "testing"                    # This is the package name (you can change it later)
+version = "0.1.0"
+description = "My Python package for testing pip install from GitHub"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+
+authors = [
+    {name = "T-Rex"}
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
